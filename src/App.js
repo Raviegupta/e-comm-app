@@ -13,8 +13,9 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Navbar />
+        <Shop />
       
-        <Routes>
+        {/* <Routes>
           <Route path='/' element={<Shop />} />
           <Route path='/mens' element={<ShopCategory category="mens" />} />
           <Route path='/womens' element={<ShopCategory category="womens" />} />
@@ -26,9 +27,9 @@ function App() {
 
           <Route path='/cart' element= {<Cart/>}/>
           <Route path='/login' element= {<LoginSignup/>}/>
-        </Routes>
+        </Routes> */}
 
-        <Footer/>
+        {/* <Footer/> */}
       </BrowserRouter>
     </div>
   );
