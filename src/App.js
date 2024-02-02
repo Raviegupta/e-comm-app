@@ -29,7 +29,7 @@ function App() {
           </Route>
 
           <Route path='/cart' element={<Cart />} />
-          <Route path='/cart' element={LoginSignup} />
+          <Route path='/login' element={<LoginSignup />} />
         </Routes>
 
         <Footer />
