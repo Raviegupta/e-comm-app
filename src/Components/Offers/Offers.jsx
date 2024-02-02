@@ -13,7 +13,6 @@ const Offers = () => {
           <div className="offers-right">
               <img src={exclusive_image} alt="" />
           </div>
-  
       </div>
     )
   }
