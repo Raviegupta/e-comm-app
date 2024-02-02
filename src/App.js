@@ -13,23 +13,21 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Navbar />
-        <Shop />
       
-        {/* <Routes>
+        <Routes>
           <Route path='/' element={<Shop />} />
-          <Route path='/mens' element={<ShopCategory category="mens" />} />
-          <Route path='/womens' element={<ShopCategory category="womens" />} />
-          <Route path='/kids' element={<ShopCategory category="kids" />} />
+          <Route path='/mens' element={<ShopCategory category='mens' />} />
+          <Route path='/womens' element={<ShopCategory category='womens' />} />
+          <Route path='/kids' element={<ShopCategory category='kids' />}/>
 
-          <Route path='/product' element={<Product />} > 
-            <Route path=':productId' element= {<Product/>} />
+          <Route path='product' element={<Product />}>
+            <Route path=':productId' element={<Product />}/>
           </Route>
 
-          <Route path='/cart' element= {<Cart/>}/>
-          <Route path='/login' element= {<LoginSignup/>}/>
-        </Routes> */}
+          <Route path='/cart' element={<Cart />} />
+          <Route path='/cart' element={LoginSignup} />
+        </Routes>
 
-        {/* <Footer/> */}
       </BrowserRouter>
     </div>
   );
