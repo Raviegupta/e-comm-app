@@ -28,6 +28,7 @@ function App() {
           <Route path='/cart' element={LoginSignup} />
         </Routes>
 
+        <Footer />
       </BrowserRouter>
     </div>
   );
