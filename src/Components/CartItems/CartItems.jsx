@@ -14,6 +14,7 @@ const CartItems = () => {
         <p>Title</p>
         <p>Price</p>
         <p>Quantity</p>
+        <p>Total</p>
         <p>Remove</p>
       </div>
       <hr />
@@ -30,7 +31,11 @@ const CartItems = () => {
                 />
                 <p>{item.name}</p>
                 <p>${item.new_price}</p>
-                <button className="cartitems-quantity">{cartItems[item.id]}</button>
+                <div className="cartitems-quantity-box">
+                  <span onClick={()=>{addToCart(item.id)}} className="cartitems-quantity-add">➕ </span>
+                  <button className="cartitems-quantity">{cartItems[item.id]}</button>  
+                  <span onClick={()=>{removeFromCart(item.id)}} className="cartitems-quantity-minus"> ➖</span>
+                </div>
                 <p>${item.new_price * cartItems[item.id]}</p>
                 <img
                   className="cartitems-remove-icon"
