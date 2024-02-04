@@ -5,7 +5,7 @@ import Item from '../Items/Item'
 
 const RelatedProducts = () => {
   return (
-    <div className='relatedproducts'>
+    <div className='related-products'>
         <h1>Related Products</h1>
         <hr />
         <div className="related-products-items">
