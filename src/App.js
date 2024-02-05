@@ -20,6 +20,7 @@ function App() {
       
         <Routes>
           <Route path='/' element={<Shop />} />
+          <Route path='/e-comm-app' element={<Shop />} />
           <Route path='/mens' element={<ShopCategory category='men' banner={men_banner} />} />
           <Route path='/womens' element={<ShopCategory category='women' banner={women_banner} />} />
           <Route path='/kids' element={<ShopCategory category='kid' banner={kid_banner} />}/>
