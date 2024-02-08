@@ -1,8 +1,18 @@
 import './Popular.css'
-import data_product from '../Assets/popular_data'
+// import data_product from '../Assets/popular_data'
 import Item from '../Items/Item'
+import { useEffect, useState } from 'react'
 
 const Popular = () => {
+
+  const [ data_product, setData_product ] = useState([]);
+
+  useEffect(()=>{
+    fetch('http://localhost:4000/popularinwomen')
+    .then(response=>response.json())
+    .then(data=>setData_product(data))
+  }, []);
+
   return (
     <div className='popular'>
         <h1>POPULAR IN WOMEN</h1>
